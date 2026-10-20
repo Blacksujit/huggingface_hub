@@ -14211,7 +14211,8 @@ class HfApi:
             prefix (`str`, *optional*):
                 Filter results to files whose path starts with this prefix.
             recursive (`bool`, *optional*):
-                If `True`, list files recursively. If `False` (default), list files and directories only at root.
+                If `True` (default), list all files recursively. If `False`, only list the files and directories at the
+                top level (or directly under `prefix`).
             token (`bool` or `str`, *optional*):
                 A valid user access token (string). Defaults to the locally saved
                 token, which is the recommended method for authentication (see
